@@ -1,6 +1,8 @@
 // En este ejercicio deberéis realizar algunos cambios sobre las dos listas incluidas en "index.html".
+
 // En la primera lista tendréis que hacer lo siguiente:
 //    * Añadid la clase "element-n" a cada "span" de la lista, siendo "n" el número del lugar que ocupa en la lista (por ejemplo el segundo "span" de la lista tendría la clase "element-2"). Para ello, haced uso de los selectores de nodo (parentNode, nextSibling, firstChild...) partiendo del "span" con la clase "selected" siempre.
+
 //    * Tras añadir las clases, haced uso de "querySelectorAll" para obtener solo los elementos "li" con valor par (teniendo en cuenta que el primer elmento es el 1) y, a continuación, eliminadlos.
 
 //En la segunda lista, que en principio está vacía, deberéis hacer esto:
@@ -9,7 +11,8 @@
 // Suerte!
 
 window.addEventListener("load", onLoad);
-
+var elementos = (document.getElementsByClassName("selected").innerHTML =
+  "element-n");
 function onLoad() {
-  console.log("hi");
+  console.log(elementos);
 }
