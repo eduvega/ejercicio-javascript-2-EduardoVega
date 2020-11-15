@@ -11,8 +11,7 @@
 // Suerte!
 
 window.addEventListener("load", onLoad);
-var elementos = (document.getElementsByClassName("selected").innerHTML =
-  "element-n");
+
 function onLoad() {
-  console.log(elementos);
+  console.log(elemento);
 }
